@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="javascript">
+var flag1=0,flag2=0,flag3=0,flag4=0;
+function friends()
+{
+if(flag1==0)
+{document.getElementById("chars").innerHTML="<a href=\"Friends.html\" target=\"display\"><div>QUIZ</div></a><br><a href=\"friendsfun.html\" target=\"display\"><div>TRIVIA</div></a>"
+flag1=1;
+}
+else
+{
+document.getElementById("chars").innerHTML="";
+flag1=0;
+}
+}
+function modern()
+{
+if(flag2==0)
+{document.getElementById("chars1").innerHTML="<a href=\"ModernFamily.html\" target=\"display\"><div>QUIZ</div></a><br><a href=\"modernfun.html\" target=\"display\"><div>TRIVIA</div></a>"
+flag2=1;
+}
+else
+{
+document.getElementById("chars1").innerHTML="";
+flag2=0;
+}
+}
+function bigbang()
+{
+if(flag3==0)
+{document.getElementById("chars2").innerHTML="<a href=\"TBBT.html\" target=\"display\"><div>QUIZ</div></a><br><a href=\"bigfun.html\" target=\"display\"><div>TRIVIA</div></a>"
+flag3=1;
+}
+else
+{
+document.getElementById("chars2").innerHTML="";
+flag3=0;
+}
+}
+function b99()
+{
+if(flag4==0)
+{document.getElementById("chars3").innerHTML="<a href=\"BrooklynNineNine.html\" target=\"display\"><div>QUIZ</div></a><br><a href=\"b99fun.html\" target=\"display\"><div>TRIVIA</div></a>"
+flag4=1;
+}
+else
+{
+document.getElementById("chars3").innerHTML="";
+flag4=0;
+}
+}
+</script>
+<style>
+body{
+background-color:black;
+text-align:center;
+}
+div{
+border-style:dotted dashed solid double;
+border-color:aqua;
+border-width:1px;
+border-radius:20px;
+}
+a{
+font-size:30px;
+font-weight:bold;
+text-decoration:none;
+}
+a:link{
+color:rgb(20, 124, 165);
+}
+a:visited{
+color:rgb(20, 124, 165);
+}
+a:hover{
+color:red;
+}
+h1{
+color:aqua;
+font-size:40px;
+}
+</style>
+</head>
+<body>
+<h1>MENU</h1>
+<div><a href="Friends.html" target="display" onclick="friends()">FRIENDS</a></div>
+<div id="chars" style="background-color:black;"></div>
+<br>
+<div><a href="ModernFamily.html" target="display" onclick="modern()">Modern Family</a></div>
+<div id="chars1" style="background-color:black;"></div>
+<br>
+<div><a href="TBBT.html" target="display" onclick="bigbang()">The Big Bang Theory</a></div>
+<div id="chars2" style="background-color:black;"></div>
+<br>
+<div><a href="BrooklynNineNine.html" target="display" onclick="b99()">Brooklyn Nine Nine</a></div>
+<div id="chars3" style="background-color:black;"></div>
+<br>
+<div><a href="Riverdale.html" target="display">Riverdale</a></div><br>
+<div><a href="strange.html" target="display">Stranger Things</a></div>
+<br>
+
+</body>
+</html>
